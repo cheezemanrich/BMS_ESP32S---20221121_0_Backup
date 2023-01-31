@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "BMS_ESP32S",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

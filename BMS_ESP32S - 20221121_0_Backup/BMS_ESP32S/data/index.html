@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>BMS Web Server</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<h1><center><i class="far fa-compass"></i> BMS <i class="far fa-compass"></i></center></h1>
+	
+	<p><center><p id="systemcolor"></p></center></p>
+
+	<center>
+	<table border = "1">
+    <tr><td>SOC</td><td><span id="systemsoc"></span>%</td><td><span id="systemstatus"></span></td><td><span id="systempower"></span>W</td></tr>
+	<tr><td>Charge Relay</td><td><span id="systemchargerelay"></span></td><td>Load Relay</td><td><span id="systemloadrelay"></span></td></tr>
+    <tr><td>Upper Volt</td><td><span id="systemvoltupper"></span>V</td><td>Upper Curr</td><td><span id="systemcurrupper"></span>A</td></tr>
+	<tr><td>Lower Volt</td><td><span id="systemvoltlower"></span>V</td><td>Lower Curr</td><td><span id="systemcurrlower"></span>A</td></tr>
+	<tr><td>Total Volt</td><td><span id="systemvolttotal"></span>V</td><td>Total Curr</td><td><span id="systemcurrent"></span>A</td></tr>
+	</table>
+	<table border = "1">
+		<tr><td><span id="graphbutton"></span></td></tr>
+	</table>
+	</center>
+	
+	<p> </p>
+	
+	<center>
+	<table border = "1">
+	<tr>
+		<td><span id="battery1button"></span></td>
+		<td><span id="battery2button"></span></td>
+		<td><span id="battery7button"></span></td>
+		<td><span id="battery8button"></span></td>
+	</tr>
+
+	<tr>	
+		<td>Bal : <span id="balance1"></span></td>
+		<td>Bal : <span id="balance2"></span></td>
+		<td>Bal : <span id="balance7"></span></td>
+		<td>Bal : <span id="balance8"></span></td>
+	</tr>
+
+	<tr>	
+		<td>Delt: <span id="delta1"></span> mV</td>
+		<td>Delt: <span id="delta2"></span> mV</td>
+		<td>Delt: <span id="delta7"></span> mV</td>
+		<td>Delt: <span id="delta8"></span> mV</td>
+	</tr>
+
+	<tr>
+		<td>High: <span id="batt1highcell"></span> V</td>
+		<td>High: <span id="batt2highcell"></span> V</td>
+		<td>High: <span id="batt7highcell"></span> V</td>
+		<td>High: <span id="batt8highcell"></span> V</td>
+	</tr>
+
+	<tr>
+		<td>Low : <span id="batt1lowcell"></span> V</td>
+		<td>Low : <span id="batt2lowcell"></span> V</td>
+		<td>Low : <span id="batt7lowcell"></span> V</td>
+		<td>Low : <span id="batt8lowcell"></span> V</td>
+	</tr>
+
+	<tr>
+		<td>High: <span id="batt1hightemp"></span> 'C</td>
+		<td>High: <span id="batt2hightemp"></span> 'C</td>
+		<td>High: <span id="batt7hightemp"></span> 'C</td>
+		<td>High: <span id="batt8hightemp"></span> 'C</td>
+	</tr>
+	
+	<tr>	
+		<td>Volt: <span id="batt1data5"></span></td>
+		<td>Volt: <span id="batt2data5"></span></td>
+		<td>Volt: <span id="batt7data5"></span></td>
+		<td>Volt: <span id="batt8data5"></span></td>
+	</tr>
+	
+	<tr>	
+		<td>Curr: <span id="batt1data13"></span></td>
+		<td>Curr: <span id="batt2data13"></span></td>
+		<td>Curr: <span id="batt7data13"></span></td>
+		<td>Curr: <span id="batt8data13"></span></td>
+	</tr>
+	
+	<tr>	
+		<td>SOC: <span id="batt1data15"></span></td>
+		<td>SOC: <span id="batt2data15"></span></td>
+		<td>SOC: <span id="batt7data15"></span></td>
+		<td>SOC: <span id="batt8data15"></span></td>
+	</tr>
+	
+	</table>
+	</center>
+	
+	<center>
+	<table border = "1">
+	<tr>
+		<td><span id="battery3button"></span></td>
+		<td><span id="battery4button"></span></td>
+		<td><span id="battery5button"></span></td>
+		<td><span id="battery6button"></span></td>
+	</tr>
+
+	<tr>	
+		<td>Bal : <span id="balance3"></span></td>
+		<td>Bal : <span id="balance4"></span></td>
+		<td>Bal : <span id="balance5"></span></td>
+		<td>Bal : <span id="balance6"></span></td>
+	</tr>
+
+	<tr>	
+		<td>Delt: <span id="delta3"></span> mV</td>
+		<td>Delt: <span id="delta4"></span> mV</td>
+		<td>Delt: <span id="delta5"></span> mV</td>
+		<td>Delt: <span id="delta6"></span> mV</td>
+	</tr>
+
+	<tr>
+		<td>High: <span id="batt3highcell"></span> V</td>
+		<td>High: <span id="batt4highcell"></span> V</td>
+		<td>High: <span id="batt5highcell"></span> V</td>
+		<td>High: <span id="batt6highcell"></span> V</td>
+	</tr>
+
+	<tr>
+		<td>Low : <span id="batt3lowcell"></span> V</td>
+		<td>Low : <span id="batt4lowcell"></span> V</td>
+		<td>Low : <span id="batt5lowcell"></span> V</td>
+		<td>Low : <span id="batt6lowcell"></span> V</td>
+	</tr>
+
+	<tr>
+		<td>High: <span id="batt3hightemp"></span> 'C</td>
+		<td>High: <span id="batt4hightemp"></span> 'C</td>
+		<td>High: <span id="batt5hightemp"></span> 'C</td>
+		<td>High: <span id="batt6hightemp"></span> 'C</td>
+	</tr>
+	
+	<tr>	
+		<td>Volt: <span id="batt3data5"></span></td>
+		<td>Volt: <span id="batt4data5"></span></td>
+		<td>Volt: <span id="batt5data5"></span></td>
+		<td>Volt: <span id="batt6data5"></span></td>
+	</tr>
+	
+	<tr>	
+		<td>Curr: <span id="batt3data13"></span></td>
+		<td>Curr: <span id="batt4data13"></span></td>
+		<td>Curr: <span id="batt5data13"></span></td>
+		<td>Curr: <span id="batt6data13"></span></td>
+	</tr>
+	
+	<tr>	
+		<td>SOC: <span id="batt3data15"></span></td>
+		<td>SOC: <span id="batt4data15"></span></td>
+		<td>SOC: <span id="batt5data15"></span></td>
+		<td>SOC: <span id="batt6data15"></span></td>
+	</tr>
+	
+	</table>
+	</center>
+
+	<script src="script.js"></script>
+</body>
+</html>
